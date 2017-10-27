@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹幕</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="index.js"></script>
+</head>
+<body>
+	<!-- 实现原理：
+	1.设置展示弹幕元素属性为relative
+	2.动态创建弹幕元素，位置属性设置absolute，left为展示宽度
+	3.随机设置弹幕元素top值
+	4.随机产生弹幕元素移动速率，修改left值 -->
+	<div class="container">
+		<div id="content" class="content"></div>
+		<div class="content-opt">
+			<div id="content-text" class="content-text"></div>
+			<div class="content-input">
+				<input id="text" type="text">
+				<button id="send">发送</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
